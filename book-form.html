@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Your best resort</title>
+  </head>
+  <body>
+    <header id="header">
+      <!-- DROP DOWN NAV -->
+
+      <nav>
+        <div id="navToggle">
+          <input type="checkbox" id="checkboxToggle" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="hamburgerMenu">
+            <li>
+              <a href="http://127.0.0.1:5500/Week-04/Mission02/index.html"
+                >Home</a>
+            </li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <img class="logo" src="/Week-04/Mission02/Images/2.png" />
+
+      <!-- BOOK FORM -->
+
+      <div class="book-form">
+        <img class="hours-img" src="/Week-04/Mission02/Images/Hours.jpg"/>
+        <div class="details-form">
+          <form class="form1">
+            <div class="form-element">
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" required />
+            </div>
+            <br>
+            <div class="form-element">
+              <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+            </div>
+            <br>
+            <div class="form-element">
+              <label for="checkin">Check-in :</label><br />
+            <input type="date" id="checkin" name="checkin" required />
+            </div>
+            <br>
+            <div class="form-element">
+              <label for="checkout">Check-out:</label><br />
+            <input type="date" id="checkout" name="checkout" required />
+            </div>
+            <br>
+            <div class="form-element">
+              <label for="rooms">Number of rooms:</label><br />
+            <input type="number" id="rooms" name="rooms" min="1" max="4" required />
+            </div>
+            <br>
+            <p>Type of room:</p>
+            <br>
+            <div class="type-of-room">
+            <label for="type-of-room-basic">Basic</label><br />
+            <input type="radio" id="type-of-room-basic" name="type-of-room"  />
+            </div>
+            <div class="type-of-room">
+              <label for="type-of-room-vip">Vip</label><br />
+              <input type="radio" id="type-of-room-vip" name="type-of-room"  />
+            </div>
+            <br>
+          </form>
+
+          <form class="form2">
+            <div class="form-element">
+              <p>Total cost:</p><p id="total-cost-display"></p><br />
+              
+            </div>
+              <br>
+            <input type="submit" class="book" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
