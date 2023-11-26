@@ -41,6 +41,11 @@ const totalCost = document.getElementById("total-cost-display");
 const basicRoomCost = 250;
 const vipRoomCost = 500;
 
+roomsNumber.addEventListener("change", calculateCost);
+basicRoom.addEventListener("change", calculateCost);
+vipRoom.addEventListener("change", calculateCost);
+
+
 function calculateCost() {
     if (basicRoom.checked === true) {
         totalCost.innerHTML = `${basicRoomCost * roomsNumber.value} $`;
@@ -56,7 +61,4 @@ function calculateCost() {
     
 }
 
-roomsNumber.addEventListener("change", calculateCost);
-basicRoom.addEventListener("change", calculateCost);
-vipRoom.addEventListener("change", calculateCost);
 
