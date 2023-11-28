@@ -59,6 +59,6 @@ function calculateCost() {
         totalCost.innerHTML = `${vipRoomCost * roomsNumber.value * 0.9} $`;
     }
     
-}
+};
 
 
